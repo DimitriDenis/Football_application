@@ -1,25 +1,25 @@
 package com.example.JoueursService.Beans;
 
 public class Joueur {
-    private Long id;
+    private Integer id;
     private String nom;
-    private Long equipeId; // L'ID de l'équipe à laquelle appartient le joueur
+    private Integer equipeId; // L'ID de l'équipe à laquelle appartient le joueur
 
     public Joueur() {
 
     }
 
-    public Joueur(Long id, String nom, Long equipeId) {
+    public Joueur(Integer id, String nom, Integer equipeId) {
         this.id = id;
         this.nom = nom;
         this.equipeId = equipeId;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -31,11 +31,11 @@ public class Joueur {
         this.nom = nom;
     }
 
-    public Long getEquipeId() {
+    public Integer getEquipeId() {
         return equipeId;
     }
 
-    public void setEquipeId(Long equipeId) {
+    public void setEquipeId(Integer equipeId) {
         this.equipeId = equipeId;
     }
 }
